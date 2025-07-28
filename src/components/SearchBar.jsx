@@ -1,10 +1,11 @@
 import { useState } from 'react'
 // import '../App.css'
 import "../styles/SearchBar.css"
+
 // function SearchBar({ city, setCity, fetchWeather }) {
 function SearchBar({ onWeatherFetched,onForecastFetched, onError }) {
   const [city, setCity] = useState("");
-  const API_KEY = "3633215f227314983f05b78a1c1cf941";
+  const API_KEY = import.meta.env.API_KEY;
 
   const fetchWeather = async () => {
     if (city.trim() === "") {

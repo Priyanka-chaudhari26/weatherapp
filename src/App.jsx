@@ -14,32 +14,7 @@ function App() {
   const [forecastData, setForecastData] = useState([]); 
   const [error, setError] = useState("");
 
-  // const API_KEY = "3633215f227314983f05b78a1c1cf941";
-
-  // const fetchWeather = async () => {
-  //   if (city.trim() === "") {
-  //     setError("Please enter a city name");
-  //     setWeatherData(null);
-  //     return;
-  //   }
-
-  //   try {
-  //     const response = await fetch(
-  //       `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`
-  //     );
-  //     if (!response.ok) {
-  //       throw new Error("City not found");
-  //     }
-  //     const data = await response.json();
-  //     console.log(data);
-  //     setWeatherData(data);
-  //     setError("");
-  //   } catch (err) {
-  //     setError(err.message);
-  //     setWeatherData(null);
-  //   }
-  // };
-
+ 
   return (
     // <div style={{ textAlign: "center", marginTop: "50px" }}>
     //   <h1>🌤 Weather App</h1>
