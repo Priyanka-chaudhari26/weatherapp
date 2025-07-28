@@ -1,4 +1,4 @@
-import "../styles/Forecast5Day.css";
+import "../styles/Forecast5day.css";
 
 function Forecast5Day({ forecastData }) {
   if (!forecastData || !forecastData.list) return null;

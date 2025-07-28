@@ -5,7 +5,7 @@ import "../styles/SearchBar.css"
 // function SearchBar({ city, setCity, fetchWeather }) {
 function SearchBar({ onWeatherFetched,onForecastFetched, onError }) {
   const [city, setCity] = useState("");
-  const API_KEY = import.meta.env.API_KEY;
+  const API_KEY = import.meta.env.VITE_API_KEY;
 
   const fetchWeather = async () => {
     if (city.trim() === "") {
